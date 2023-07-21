@@ -13,12 +13,12 @@ struct DetailCellView: View {
     var detailLog: DetailLog = .init(inTime: Date(), spend: 100)
     
     var body: some View {
-        HStack {
+        HStack(alignment: .center, spacing: 10.0) {
             
             VStack(alignment: .leading, spacing: 10.0) {
-                Text("In Time")
-                Text("Out Time")
-                Text("Spend")
+                Text("Step In at")
+                Text("Step Out at")
+                Text("Spend in this Period")
             }
             
 //            Divider()

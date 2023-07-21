@@ -17,18 +17,16 @@ enum VisitState {
     
     var name: String {
         if case .stepIn = self {
-            return "In"
+            return "Step In"
         }
-        
-        return "Out"
+        return "Step Out"
     }
     
     var icon: String {
         if case .stepIn = self {
-            return "play.circle.fill"
+            return "figure.walk.arrival"
         }
-        
-        return "pause.circle.fill"
+        return "figure.walk.departure"
     }
     
    mutating func toggle() {
@@ -108,15 +106,15 @@ struct HomeScreen: View {
                             }
                             
                             HStack {
-                                Label("Expected ShiftOut", systemImage: "clock")
+                                Label("Expecting Step Out", systemImage: "clock")
                                 Spacer()
                                 Text(Date.now, style: .time)
                             }
                             
                             HStack {
-                                Label("Spend", systemImage: "clock")
+                                Label("Spend upto now", systemImage: "clock")
                                 Spacer()
-                                Text(todayLog.spends.stringFromTimeInterval())
+                                Text(todayLog.calculatedTotalSpend().stringFromTimeInterval())
                             }
                         }
                         
@@ -124,16 +122,17 @@ struct HomeScreen: View {
                             NavigationLink {
                                 HistoryScreen()
                             } label: {
-                                Label("Work Log Book", systemImage: "list.bullet.circle")
+                                Label("History", systemImage: "list.bullet.circle")
                             }
                             
                         }
                     }
+                    .listStyle(.grouped)
                     
                     Spacer(minLength: 10)
                     
                     Button {
-                        // ShiftIn
+                        // Step In
                         withAnimation {
                             self.visitButtonTapped()
                         }
@@ -142,7 +141,9 @@ struct HomeScreen: View {
                         Image(systemName: visitState.icon)
                             .resizable()
                             .frame(width: 100, height: 100, alignment: .center)
-
+                        
+                        Text(visitState.name)
+                        
                         // .foregroundColor(Color.themeColor1)
                     }.padding()
                         .foregroundColor(visitState.foregroundColor)
@@ -190,7 +191,7 @@ struct HomeScreen: View {
                             })
                         })
                         
-                        Text("Tap 'Start Work Today' Button before start ShiftIn.")
+                        Text("Tap 'Start Work Today' Button before start Step In.")
                             .font(.callout)
                             .multilineTextAlignment(.center)
                             .padding(.bottom)
@@ -220,12 +221,12 @@ struct HomeScreen: View {
 //                self.visitState = .stepIn
             }
             
-            .navigationTitle("In Office")
+            .navigationTitle("At Office")
         }
     }
     
     
-    /// Shift Button Tapped.
+    /// Step In/ Out Button Tapped.
     func visitButtonTapped() {
         
         guard let todayLog = todayLog else { return }
@@ -240,7 +241,7 @@ struct HomeScreen: View {
         } else {
             guard let lastVisit = todayLog.sortedLogs().last else { return }
             
-            let interval = lastVisit.inTime.timeIntervalSince(currentDate)
+            let interval = currentDate.timeIntervalSince(lastVisit.inTime)
             lastVisit.outTime = currentDate
             lastVisit.setSpend(interval)
             

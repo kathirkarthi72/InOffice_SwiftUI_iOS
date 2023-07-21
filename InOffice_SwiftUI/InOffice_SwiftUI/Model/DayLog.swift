@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 import OSLog
 
-fileprivate let logger = Logger(subsystem: "In Office", category: "DayLog")
+fileprivate let logger = Logger(subsystem: "At Office", category: "DayLog")
 
 @Model
 final class DayLog: Identifiable {
@@ -42,7 +42,7 @@ extension DayLog {
     
     /// Calculate total Spend
     /// - Returns: TimeInterval
-    func calculateTotalSpend() -> TimeInterval {
+    func calculatedTotalSpend() -> TimeInterval {
         
         let totalSpend = log.compactMap({ $0.getSpend() }).reduce(0.0, +)
         return totalSpend

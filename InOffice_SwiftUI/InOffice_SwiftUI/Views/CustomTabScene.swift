@@ -18,7 +18,7 @@ struct CustomTabScene: View {
                     // no Record = clock.fill
                     // inprogress = clock.badge.exclamationmark.fill
                     // Completed = clock.badge.checkmark.fill
-                    Label("Home", systemImage: "clock.badge.checkmark.fill")
+                    Label("At Office", systemImage: "building.2.crop.circle")
                 }
                 .tag("One")
             

@@ -17,9 +17,9 @@ struct HistoryDetailScreen: View {
         List {
             Section {
                 HStack {
-                    Text("Total Spend")
+                    Text("Total Spend in today")
                     Spacer()
-                    Text(dayLogs.spends.stringFromTimeInterval())
+                    Text(dayLogs.calculatedTotalSpend().stringFromTimeInterval())
                         .foregroundStyle(.green)
                 }
                 .font(.title3)

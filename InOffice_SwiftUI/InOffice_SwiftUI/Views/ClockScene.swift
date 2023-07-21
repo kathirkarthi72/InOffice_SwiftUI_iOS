@@ -84,57 +84,6 @@ private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect(
     }
 }
 
-
-
 #Preview {
     ClockScene()
 }
-
-/*
- var body: some View {
-     
-     VStack(spacing: 10) {
-         
-         Text(currentDate, style: .date)
-             .font(.largeTitle)
-         
-         ZStack {
-             RoundedRectangle(cornerRadius: 25.0)
-                 .frame(width: 250, height: 250)
-                 .foregroundStyle(Color.green.opacity(0.4))
-             
-                                 
-             Text("\(hourCompond)")
-                 .font(Font.system(size: 200))
-                 .fontWeight(.medium)
-         }
-         
-         HStack(alignment: .bottom, spacing: 10.0) {
-             ZStack {
-                 RoundedRectangle(cornerRadius: 25.0)
-                     .frame(width: 250, height: 250)
-                     .foregroundStyle(Color.pink.opacity(0.4))
-                 
-                 Text("\(minCompond)")
-                     .font(Font.system(size: 150))
-             }
-             
-             ZStack {
-                 RoundedRectangle(cornerRadius: 20)
-                     .frame(width: 150, height: 150)
-                     .foregroundStyle(Color.blue.opacity(0.4))
-                 
-                 Text("\(secCompond)")
-                     .font(Font.system(size: 100))
-             }
-             .offset(y: 50)
-         }
-         .padding()
-     }
-     .onReceive(timer) { input in
-         withAnimation {
-             currentDate = input
-         }
-     }
- }
- */

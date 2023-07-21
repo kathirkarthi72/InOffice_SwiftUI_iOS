@@ -45,7 +45,7 @@ extension DetailLog {
         guard outTime != nil else {
             
             let currentDate = Date()
-            let unRealisedSpend = inTime.timeIntervalSince(currentDate)
+            let unRealisedSpend = currentDate.timeIntervalSince(inTime)
             
             return unRealisedSpend
         }

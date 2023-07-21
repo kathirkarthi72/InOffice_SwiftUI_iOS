@@ -74,7 +74,7 @@ struct Settings: View {
             }
             .formStyle(.grouped)
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
       
     }
     

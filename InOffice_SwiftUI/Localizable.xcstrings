@@ -13,6 +13,9 @@
     "Add Item" : {
 
     },
+    "At Office" : {
+
+    },
     "Cancel" : {
 
     },
@@ -37,7 +40,7 @@
     "Day Started" : {
 
     },
-    "Expected ShiftOut" : {
+    "Expecting Step Out" : {
 
     },
     "Filter" : {
@@ -46,22 +49,10 @@
     "History" : {
 
     },
-    "Home" : {
-
-    },
-    "In Office" : {
-
-    },
-    "In Time" : {
-
-    },
     "Item at %@" : {
 
     },
     "Joined Date" : {
-
-    },
-    "Out Time" : {
 
     },
     "Profile" : {
@@ -76,19 +67,28 @@
     "Settings" : {
 
     },
-    "Spend" : {
+    "Spend in this Period" : {
+
+    },
+    "Spend upto now" : {
 
     },
     "Start Work\nToday" : {
 
     },
-    "Tap 'Start Work Today' Button before start ShiftIn." : {
+    "Step In at" : {
+
+    },
+    "Step Out at" : {
+
+    },
+    "Tap 'Start Work Today' Button before start Step In." : {
 
     },
     "Today" : {
 
     },
-    "Total Spend" : {
+    "Total Spend in today" : {
 
     },
     "Weekly working days" : {

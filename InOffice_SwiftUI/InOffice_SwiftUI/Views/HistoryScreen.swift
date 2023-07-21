@@ -34,7 +34,7 @@ struct HistoryScreen: View {
     
     @Query private var dayLogs: [DayLog]
     
-    @State private var filterSegment: FilterSegment = .All
+    @State private var filterSegment: FilterSegment = .today
     
     private func filteredLog() -> [DayLog] {
         
@@ -81,7 +81,7 @@ struct HistoryScreen: View {
                                     
                                     Text(day.startDate, style: .date)
                                     Spacer()
-                                    Text(day.spends.stringFromTimeInterval())
+                                    Text(day.calculatedTotalSpend().stringFromTimeInterval())
                                         .foregroundColor(Color.themeColor1)
                                 }
                             }
