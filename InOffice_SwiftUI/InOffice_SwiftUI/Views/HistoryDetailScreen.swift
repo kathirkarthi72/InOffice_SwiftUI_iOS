@@ -26,7 +26,7 @@ struct HistoryDetailScreen: View {
                 .bold()
             }
             
-            ForEach(dayLogs.log) { item in
+            ForEach(dayLogs.sortedLogs()) { item in
                 DetailCellView(detailLog: item)
             }
             

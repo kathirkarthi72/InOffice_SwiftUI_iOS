@@ -1,0 +1,105 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    ".." : {
+
+    },
+    "%lld" : {
+
+    },
+    "Add Item" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Clock" : {
+
+    },
+    "Close" : {
+
+    },
+    "Close the day ?" : {
+
+    },
+    "Content View" : {
+
+    },
+    "Daily working hours" : {
+
+    },
+    "Date" : {
+
+    },
+    "Day Started" : {
+
+    },
+    "Expected ShiftOut" : {
+
+    },
+    "Filter" : {
+
+    },
+    "History" : {
+
+    },
+    "Home" : {
+
+    },
+    "In Office" : {
+
+    },
+    "In Time" : {
+
+    },
+    "Item at %@" : {
+
+    },
+    "Joined Date" : {
+
+    },
+    "Out Time" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Save" : {
+
+    },
+    "Select an item" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Spend" : {
+
+    },
+    "Start Work\nToday" : {
+
+    },
+    "Tap 'Start Work Today' Button before start ShiftIn." : {
+
+    },
+    "Today" : {
+
+    },
+    "Total Spend" : {
+
+    },
+    "Weekly working days" : {
+
+    },
+    "Work Log Book" : {
+
+    },
+    "Yes" : {
+
+    }
+  },
+  "version" : "1.0"
+}

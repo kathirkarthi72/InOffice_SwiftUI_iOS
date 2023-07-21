@@ -31,9 +31,11 @@ enum FilterSegment: CaseIterable {
 
 struct HistoryScreen: View {
     @Environment(\.modelContext) private var modelContext
+    
     @Query private var dayLogs: [DayLog]
     
     @State private var filterSegment: FilterSegment = .All
+    
     private func filteredLog() -> [DayLog] {
         
         switch filterSegment {

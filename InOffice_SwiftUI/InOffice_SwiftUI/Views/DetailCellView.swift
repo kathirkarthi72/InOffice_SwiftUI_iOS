@@ -28,11 +28,14 @@ struct DetailCellView: View {
 
                 if let outTime = detailLog.outTime {
                     Text(outTime, style: .time)
+                    Text(detailLog.spendsInHours())
+
                 } else {
                     Text("..")
+                    Text(detailLog.inTime, style: .relative)
+
                 }
 
-                Text(detailLog.spendsInHours())
             }
             .foregroundStyle(.themeColor1)
         }

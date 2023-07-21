@@ -30,6 +30,12 @@ final class DayLog: Identifiable {
         self.spends = spends
         self.note = note
     }
+    
+    func sortedLogs() -> [DetailLog] {
+        let descriptor = SortDescriptor(\DetailLog.inTime, order: .forward)
+        
+        return log.sorted(using: descriptor)
+    }
 }
 
 extension DayLog {

@@ -60,13 +60,17 @@ struct HomeScreen: View {
     @State private var showCloseDayAlert: Bool = false
     
     func updateVisitState() {
-        guard self.todayLog?.log.last?.outTime != nil else {
+        guard let lastLog = self.todayLog?.sortedLogs().last else {
             self.visitState = .stepIn
-
             return
         }
         
-        self.visitState = .stepOut
+        guard lastLog.outTime != nil else {
+            self.visitState = .stepOut
+            return
+        }
+        
+        self.visitState = .stepIn
     }
     
     private var todayLog: DayLog? {
@@ -142,6 +146,7 @@ struct HomeScreen: View {
                         // .foregroundColor(Color.themeColor1)
                     }.padding()
                         .foregroundColor(visitState.foregroundColor)
+                    
                     
                         .toolbar {
                             ToolbarItem {
@@ -224,16 +229,16 @@ struct HomeScreen: View {
     func visitButtonTapped() {
         
         guard let todayLog = todayLog else { return }
+        let currentDate = Date.now
 
         if case .stepIn = self.visitState { // Step In
-            let log = DetailLog(inTime: Date(), spend: 0.0)
+            let log = DetailLog(inTime: currentDate, spend: 0.0)
             todayLog.log.append(log)
             
-//            self.visitState = .stepOut
+            self.visitState = .stepOut
 
         } else {
-            guard let lastVisit = todayLog.log.last else { return }
-            let currentDate = Date.now
+            guard let lastVisit = todayLog.sortedLogs().last else { return }
             
             let interval = lastVisit.inTime.timeIntervalSince(currentDate)
             lastVisit.outTime = currentDate
@@ -241,7 +246,7 @@ struct HomeScreen: View {
             
             self.updateTotalSpend(todayLog)
             
-//            self.visitState = .stepIn
+            self.visitState = .stepIn
         }
     }
     
@@ -260,7 +265,7 @@ struct HomeScreen: View {
     fileprivate func updateTotalSpend(_ todayLog: DayLog) {
         logger.info("updateTotalSpend")
 
-        let totalSpend = todayLog.log.compactMap({ $0.getSpend() }).reduce(0.0, +)
+        let totalSpend = todayLog.sortedLogs().compactMap({ $0.getSpend() }).reduce(0.0, +)
         todayLog.spends = totalSpend
     }
     
