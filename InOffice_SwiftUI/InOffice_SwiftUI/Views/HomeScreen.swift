@@ -73,15 +73,12 @@ struct HomeScreen: View {
     
     private var todayLog: DayLog? {
         guard let todayLog = self.dayLogs.todayLog().last else { return nil }
-        
-//
-//        if todayLog.log.last?.outTime == nil {
-//            self.visitState = .stepOut
-//        }
-//        self.visitState = .stepIn
-        
         return todayLog
     }
+    
+    @State private var todayExpand: Bool = true
+
+    @State private var historyExpand: Bool = true
     
     var body: some View {
                 
@@ -92,7 +89,7 @@ struct HomeScreen: View {
                 if let todayLog = self.todayLog {
                     // Day Started.
                     List {
-                        Section("Today") {
+                        Section("Today", isExpanded: $todayExpand, content: {
                             HStack {
                                 Label("Date", systemImage: "clock")
                                 Spacer()
@@ -116,18 +113,37 @@ struct HomeScreen: View {
                                 Spacer()
                                 Text(todayLog.calculatedTotalSpend().stringFromTimeInterval())
                             }
-                        }
+                        })
                         
-                        Section {
+                        Section("History", isExpanded: $historyExpand, content: {
                             NavigationLink {
-                                HistoryScreen()
+                                HistoryScreen(filterSegment: .today)
+                                    
                             } label: {
-                                Label("History", systemImage: "list.bullet.circle")
+                                Label("Today", systemImage: "list.bullet.circle")
                             }
                             
-                        }
+                            NavigationLink {
+                                HistoryScreen(filterSegment: .week)
+                            } label: {
+                                Label("This Week", systemImage: "list.bullet.circle")
+                            }
+                            
+                            NavigationLink {
+                                HistoryScreen(filterSegment: .month)
+                            } label: {
+                                Label("This Month", systemImage: "list.bullet.circle")
+                            }
+                            
+                            NavigationLink {
+                                HistoryScreen(filterSegment: .all)
+                            } label: {
+                                Label("All", systemImage: "list.bullet.circle")
+                            }
+
+                        })
                     }
-                    .listStyle(.grouped)
+//                    .listStyle(.grouped)
                     
                     Spacer(minLength: 10)
                     

@@ -25,6 +25,7 @@
 		186CE36C2A329B670012C05C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CE36B2A329B670012C05C /* HomeScreen.swift */; };
 		18AF01DA2A3310DC00533B4A /* IOCustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF01D92A3310DC00533B4A /* IOCustomField.swift */; };
 		18AF01DC2A33156100533B4A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF01DB2A33156100533B4A /* Settings.swift */; };
+		18C023002A6EB0BE004C438B /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C022FF2A6EB0BE004C438B /* UserDetail.swift */; };
 		18FFA0542A38741E00D227E1 /* DetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA0532A38741E00D227E1 /* DetailCellView.swift */; };
 		18FFA0562A38796200D227E1 /* CustomTabScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA0552A38796200D227E1 /* CustomTabScene.swift */; };
 		18FFA0582A3881C300D227E1 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FFA0572A3881C300D227E1 /* CircleProgressView.swift */; };
@@ -70,6 +71,7 @@
 		186CE36B2A329B670012C05C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		18AF01D92A3310DC00533B4A /* IOCustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOCustomField.swift; sourceTree = "<group>"; };
 		18AF01DB2A33156100533B4A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		18C022FF2A6EB0BE004C438B /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		18FFA0532A38741E00D227E1 /* DetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellView.swift; sourceTree = "<group>"; };
 		18FFA0552A38796200D227E1 /* CustomTabScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabScene.swift; sourceTree = "<group>"; };
 		18FFA0572A3881C300D227E1 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				186CE3432A3298CF0012C05C /* Item.swift */,
 				186061582A334E3D007CD619 /* DetailLog.swift */,
 				1860615A2A334F5D007CD619 /* DayLog.swift */,
+				18C022FF2A6EB0BE004C438B /* UserDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				186061572A333D05007CD619 /* HistoryDetailScreen.swift in Sources */,
 				18FFA0562A38796200D227E1 /* CustomTabScene.swift in Sources */,
 				18FFA0582A3881C300D227E1 /* CircleProgressView.swift in Sources */,
+				18C023002A6EB0BE004C438B /* UserDetail.swift in Sources */,
 				186061592A334E3D007CD619 /* DetailLog.swift in Sources */,
 				18298F992A35E9E60077156B /* DateExt.swift in Sources */,
 				186CE33D2A3298CC0012C05C /* ContentView.swift in Sources */,

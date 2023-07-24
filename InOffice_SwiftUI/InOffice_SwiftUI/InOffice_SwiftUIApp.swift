@@ -28,7 +28,6 @@ struct InOffice_SwiftUIApp: App {
 }
 
 
-
 let sampleDetailLog: DetailLog = DetailLog(inTime: Date.now,
                                            outTime: Date().addingTimeInterval(60),
                                            spend: 60.0)

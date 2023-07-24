@@ -12,17 +12,17 @@ enum FilterSegment: CaseIterable {
     case today
     case week
     case month
-    case All
+    case all
     
     var name: String {
         switch self {
         case .today:
             return "Today"
         case .week:
-            return "Week"
+            return "This Week"
         case .month:
-            return "Month"
-        case .All:
+            return "This Month"
+        case .all:
             return "All"
         }
     }
@@ -34,7 +34,7 @@ struct HistoryScreen: View {
     
     @Query private var dayLogs: [DayLog]
     
-    @State private var filterSegment: FilterSegment = .today
+    @State var filterSegment: FilterSegment = .today
     
     private func filteredLog() -> [DayLog] {
         
@@ -45,7 +45,7 @@ struct HistoryScreen: View {
             dayLogs.weekLog()
         case .month:
             dayLogs.monthLog()
-        case .All:
+        case .all:
             dayLogs
         }
     }
