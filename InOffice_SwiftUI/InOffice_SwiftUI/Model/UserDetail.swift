@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class UserDetail: Identifiable {
+final class UserDetail: Identifiable, CustomStringConvertible {
     
     @Attribute(.unique) var id = UUID()
     var name: String = ""
@@ -29,13 +29,19 @@ final class UserDetail: Identifiable {
         self.companyDetail = companyDetail
     }
     
-    init() {}
+    init() {
+        self.companyDetail = CompanyDetail()
+    }
+    
+    var description: String {
+        String(format: "id: %@, name: %@, Dob: %@, email: %@, mobile: %@,\ncompany: %@", id.description, name, dateOfBirth.description, email, mobileNumber, companyDetail.description )
+    }
 }
 
 @Model
-final class CompanyDetail: Identifiable {
+final class CompanyDetail: Identifiable, CustomStringConvertible {
     
-    @Attribute(.unique) var id = UUID()
+   var id = UUID()
     var name: String = ""
     var dateOfJoin: Date = Date.now
     var workingHours: String = ""
@@ -51,4 +57,7 @@ final class CompanyDetail: Identifiable {
     
     init() {}
 
+    var description: String {
+        String(format: "id: %@, name: %@, DoJ: %@, workingHours: %@, weeklyWorkingDays: %@", id.description, name, dateOfJoin.description, workingHours, weeklyWorkingDays)
+    }
 }

@@ -241,7 +241,6 @@ struct HomeScreen: View {
         }
     }
     
-    
     /// Step In/ Out Button Tapped.
     func visitButtonTapped() {
         

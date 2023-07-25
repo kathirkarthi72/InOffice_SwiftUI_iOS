@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import OSLog
 
 /// User Settings
 struct Settings: View {
@@ -35,80 +36,97 @@ struct Settings: View {
     private var noOfdays = ["4", "5", "6", "7"]
 
     @State private var workingDays: String = "5"
-        
     
-
+    private let logger = Logger(subsystem: "Settings", category: "InOffice_SwiftUI")
+    
+    @State private var isSavedUIVisible: Bool = false
+    
     var body: some View {
         
         NavigationView {
-            
-            List {
-                Section("Personal Detail", isExpanded: $expandPersonalSection, content: {
-                    
-                    IOCustomField(fieldName: "Name", text: $userName)
-                    
-                    DatePicker(selection: $joinedDate, displayedComponents: .date) {
-                        Text("Date of Birth")
-                            .font(.title3)
-                            .bold()
-                            .foregroundStyle(Color.themeColor1)
-                    }
-                    .padding(.vertical)
-                    
-                    IOCustomField(fieldName: "Email", text: $email)
-                    
-                    IOCustomField(fieldName: "Mobile number", text: $mobileNumber)
-                })
-                
-                Section(isExpanded: $expandCompanySection, content:  {
-                    
-                    IOCustomField(fieldName: "Company Name", text: $companyName)
-                    
-                    Picker(selection: $workingDays) {
-                        ForEach(noOfdays, id: \.self) {
-                            Text($0)
+            ZStack(content: {
+                List {
+                    Section("Personal Detail", isExpanded: $expandPersonalSection, content: {
+                        
+                        IOCustomField(fieldName: "Name", text: $userName)
+                            .keyboardType(.alphabet)
+                        
+                        DatePicker(selection: $dob, displayedComponents: .date) {
+                            Text("Date of Birth")
+                                .font(.title3)
+                                .bold()
+                                .foregroundStyle(Color.themeColor1)
                         }
-                    } label: {
-                        Text("Weekly working days")
-                            .font(.title3)
-                            .bold()
-                            .foregroundStyle(Color.themeColor1)
-                    }
-                    .padding(.vertical)
-
-                    DatePicker(selection: $joinedDate, displayedComponents: .date) {
-                        Text("Joined Date")
-                            .font(.title3)
-                            .bold()
-                            .foregroundStyle(Color.themeColor1)
-                    }
-                    .padding(.vertical)
-                    
-                    Picker(selection: $workingHours) {
-                        ForEach(hours, id: \.self) {
-                            Text($0)
-                        }
-                    } label: {
-                        Text("Daily working hours")
-                            .font(.title3)
-                            .bold()
-                            .foregroundStyle(Color.themeColor1)
-                    }
-                    .padding(.vertical)
-                }, header: {
-                    Text("Company Detail")
-                })
-                
-                HStack(alignment: .center) {
-                    Spacer()
-                    Button(action: {
-                        //
-                    }, label: {
-                        Text("Save")
+                        .padding(.vertical)
+                        
+                        IOCustomField(fieldName: "Email", text: $email)
+                            .keyboardType(.emailAddress)
+                        
+                        IOCustomField(fieldName: "Mobile number", text: $mobileNumber)
+                            .keyboardType(.numberPad)
                     })
-                    Spacer()
+                    
+                    Section(isExpanded: $expandCompanySection, content:  {
+                        
+                        IOCustomField(fieldName: "Company Name", text: $companyName)
+                            .keyboardType(.alphabet)
+
+                        Picker(selection: $workingDays) {
+                            ForEach(noOfdays, id: \.self) {
+                                Text($0)
+                            }
+                        } label: {
+                            Text("Weekly working days")
+                                .font(.title3)
+                                .bold()
+                                .foregroundStyle(Color.themeColor1)
+                        }
+                        .padding(.vertical)
+
+                        DatePicker(selection: $joinedDate, displayedComponents: .date) {
+                            Text("Joined Date")
+                                .font(.title3)
+                                .bold()
+                                .foregroundStyle(Color.themeColor1)
+                        }
+                        .padding(.vertical)
+                        
+                        Picker(selection: $workingHours) {
+                            ForEach(hours, id: \.self) {
+                                Text($0)
+                            }
+                        } label: {
+                            Text("Daily working hours")
+                                .font(.title3)
+                                .bold()
+                                .foregroundStyle(Color.themeColor1)
+                        }
+                        .padding(.vertical)
+                    }, header: {
+                        Text("Company Detail")
+                    })
                 }
-            }
+                
+                if isSavedUIVisible {
+                    Button(action: {
+                        withAnimation(.spring) {
+                            isSavedUIVisible.toggle()
+                        }
+                    }, label: {
+                        VStack(alignment: .center, spacing: 10.0) {
+                            Image(systemName: "checkmark.circle")
+                                .resizable()
+                                .frame(width: 100, height: 100, alignment: .center)
+                               
+                            Text("Saved")
+                        }
+                        .padding(20)
+                        .background(.thinMaterial)
+                        .cornerRadius(5.0)
+                    })
+                   
+                }
+            })
             
             .toolbar {
                 ToolbarItem {
@@ -117,58 +135,71 @@ struct Settings: View {
                     }
                 }
             }
-            
             .navigationTitle("Settings")
         }
         .navigationViewStyle(StackNavigationViewStyle())
         
         .onAppear {
-            
-            var myDetail = getMyDetail()
-            
-            userName = myDetail.name
-            dob = myDetail.dateOfBirth
-            
-            email = myDetail.email
-            mobileNumber = myDetail.mobileNumber
-            
-            companyName = myDetail.companyDetail.name
-            joinedDate = myDetail.companyDetail.dateOfJoin
-            
-            workingHours = myDetail.companyDetail.workingHours
-            workingDays = myDetail.companyDetail.weeklyWorkingDays
+                        
+            let myDetail = getMyDetail()
+             
+            self.userName = myDetail.name
+            self.dob = myDetail.dateOfBirth
+             
+            self.email = myDetail.email
+            self.mobileNumber = myDetail.mobileNumber
+             
+            self.companyName = myDetail.companyDetail.name
+            self.joinedDate = myDetail.companyDetail.dateOfJoin
+             
+            self.workingHours = myDetail.companyDetail.workingHours
+            self.workingDays = myDetail.companyDetail.weeklyWorkingDays
         }
-      
     }
     
+    private func getMyRecordAvailableInDB() -> Bool {
+        let users = self.userDetails
+        return users.count > 0
+    }
     
     private func getMyDetail() -> UserDetail {
-        
-        guard let myLog = self.userDetails.first else {
-            
+        if getMyRecordAvailableInDB() {
+            return self.userDetails.first!
+        } else {
             let new = UserDetail()
-            modelContext.insert(new)
-
+            logger.debug("get: \(new.description)")
+            
             return new
         }
-        return myLog
     }
     
     private func save() {
         
         let myDetail = getMyDetail()
+        
+        logger.debug("get: \(myDetail.description)")
 
-        myDetail.name = userName
-        myDetail.dateOfBirth = dob
+        myDetail.name = self.userName
+        myDetail.dateOfBirth = self.dob
         
-        myDetail.email = email
-        myDetail.mobileNumber = mobileNumber
+        myDetail.email = self.email
+        myDetail.mobileNumber = self.mobileNumber
         
-        myDetail.companyDetail.name = companyName
-        myDetail.companyDetail.dateOfJoin = joinedDate
+        myDetail.companyDetail.name = self.companyName
+        myDetail.companyDetail.dateOfJoin = self.joinedDate
         
-        myDetail.companyDetail.workingHours = workingHours
-        myDetail.companyDetail.weeklyWorkingDays = workingDays
+        myDetail.companyDetail.workingHours = self.workingHours
+        myDetail.companyDetail.weeklyWorkingDays = self.workingDays
+        
+        if !getMyRecordAvailableInDB() {
+            modelContext.insert(myDetail)
+        }
+                      
+        withAnimation(.spring) {
+            isSavedUIVisible = true
+        }
+        
+        
     }
     
 }

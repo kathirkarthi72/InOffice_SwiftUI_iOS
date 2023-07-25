@@ -12,17 +12,15 @@ import SwiftData
 struct InOffice_SwiftUIApp: App {
     
     var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//        .modelContainer(for: Item.self)
-        
+
         WindowGroup {
            CustomTabScene()
         }
         .modelContainer(for: [
             DayLog.self,
-            DetailLog.self
+            DetailLog.self,
+            CompanyDetail.self,
+            UserDetail.self
         ])
     }
 }

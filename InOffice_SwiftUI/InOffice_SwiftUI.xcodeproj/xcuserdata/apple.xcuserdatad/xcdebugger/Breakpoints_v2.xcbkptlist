@@ -14,10 +14,42 @@
             filePath = "InOffice_SwiftUI/Views/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "visitButtonTapped()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20129A30-15AB-449C-83FF-3D09CD2D61B5 - bef3e3057a26f49b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "297">
+               </Location>
+               <Location
+                  uuid = "20129A30-15AB-449C-83FF-3D09CD2D61B5 - bef3e3057a26f4fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "297">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,10 +62,42 @@
             filePath = "InOffice_SwiftUI/Views/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
             landmarkName = "closeToday()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "01E0C97C-3FE5-457C-A74D-AE8180E7676E - a45b2a8f18cb2a3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.closeToday() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "290"
+                  endingLineNumber = "290"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "01E0C97C-3FE5-457C-A74D-AE8180E7676E - a45b2a8f18cb2a5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.closeToday() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "289"
+                  endingLineNumber = "289"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,10 +110,42 @@
             filePath = "InOffice_SwiftUI/Views/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "dayStarted()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99DA8C03-7107-42DF-85DB-A1B525C85723 - fbb0d2c2fd49cb4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.dayStarted() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "274"
+                  endingLineNumber = "274"
+                  offsetFromSymbolStart = "1212">
+               </Location>
+               <Location
+                  uuid = "99DA8C03-7107-42DF-85DB-A1B525C85723 - fbb0d2c2fd49cb29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.dayStarted() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -140,10 +236,42 @@
             filePath = "InOffice_SwiftUI/Views/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "visitButtonTapped()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE3E2127-3517-497F-879D-C1B3D3606E25 - bef3e3057a26f41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
+                  offsetFromSymbolStart = "627">
+               </Location>
+               <Location
+                  uuid = "CE3E2127-3517-497F-879D-C1B3D3606E25 - bef3e3057a26f41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
+                  offsetFromSymbolStart = "747">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -156,13 +284,13 @@
             filePath = "InOffice_SwiftUI/Views/HomeScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "visitButtonTapped()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f5b4"
+                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f344"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -172,12 +300,27 @@
                   urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "241"
-                  endingLineNumber = "241"
+                  startingLineNumber = "257"
+                  endingLineNumber = "257"
+                  offsetFromSymbolStart = "994">
+               </Location>
+               <Location
+                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f344"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
+                  moduleName = "InOffice_SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "257"
+                  endingLineNumber = "257"
                   offsetFromSymbolStart = "1035">
                </Location>
                <Location
-                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f5b4"
+                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f344"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -187,38 +330,8 @@
                   urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "241"
-                  endingLineNumber = "241"
-                  offsetFromSymbolStart = "1572">
-               </Location>
-               <Location
-                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f365"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "258"
-                  endingLineNumber = "258"
-                  offsetFromSymbolStart = "1035">
-               </Location>
-               <Location
-                  uuid = "533B491D-4B2E-4841-9637-2028C906C7B4 - bef3e3057a26f365"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.HomeScreen.visitButtonTapped() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/HomeScreen.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "258"
-                  endingLineNumber = "258"
+                  startingLineNumber = "257"
+                  endingLineNumber = "257"
                   offsetFromSymbolStart = "1572">
                </Location>
             </Locations>
@@ -291,202 +404,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382"
+            uuid = "F6D4901E-3536-4153-8F0D-7152D8713BEF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InOffice_SwiftUI/Views/Settings.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "myDetail"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - 68d9c0db993d8302"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.myDetail.getter : InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "166">
-               </Location>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - 68d9c0db993d8302"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.myDetail.getter : InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "499">
-               </Location>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - 68d9c0db993d8302"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.myDetail.getter : InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "457">
-               </Location>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - 68d9c0db993d9df3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.myDetail.getter : InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "457">
-               </Location>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - 68d9c0db993d9cdc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.myDetail.getter : InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "151"
-                  endingLineNumber = "151"
-                  offsetFromSymbolStart = "541">
-               </Location>
-               <Location
-                  uuid = "471F6BAB-1E1A-4EFB-A823-F65B92537382 - a03710dd6171a7a1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.getMyDetail() -&gt; InOffice_SwiftUI.UserDetail"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "154"
-                  endingLineNumber = "154"
-                  offsetFromSymbolStart = "541">
-               </Location>
-            </Locations>
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "getMyDetail()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313"
+            uuid = "8131E6EC-5FC5-4640-822E-26399D7C8663"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InOffice_SwiftUI/Views/Settings.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "save()"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "getMyDetail()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313 - 4e27a3e568dadb8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.save() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
-                  offsetFromSymbolStart = "221">
-               </Location>
-               <Location
-                  uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313 - 4e27a3e568dadbeb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.save() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "134"
-                  endingLineNumber = "134"
-                  offsetFromSymbolStart = "221">
-               </Location>
-               <Location
-                  uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313 - 4e27a3e568dac5d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.save() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "221">
-               </Location>
-               <Location
-                  uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313 - 4e27a3e568dac6c1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.save() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "221">
-               </Location>
-               <Location
-                  uuid = "32CDF28B-0C35-40D7-9BA5-15B15047B313 - 4e27a3e568dac664"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "InOffice_SwiftUI.Settings.save() -&gt; ()"
-                  moduleName = "InOffice_SwiftUI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/Personal/GitHub/InOffice_SwiftUI_iOS/InOffice_SwiftUI/InOffice_SwiftUI/Views/Settings.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "161"
-                  endingLineNumber = "161"
-                  offsetFromSymbolStart = "335">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
